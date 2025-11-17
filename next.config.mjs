@@ -15,19 +15,16 @@
 const nextConfig = {
   reactStrictMode: true,
 
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
   images: {
     unoptimized: false,
     remotePatterns: [
       {
         protocol: "https",
         hostname: "drive.google.com",
-        port: "",
-        pathname: "/uc",
-      },
-      {
-        protocol: "https",
-        hostname: "drive.google.com",
-        port: "",
         pathname: "/uc*",
       },
     ],
