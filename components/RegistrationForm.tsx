@@ -229,11 +229,11 @@ export default function RegistrationForm() {
                 <label className="block text-white mb-2 font-medium">
                   WhatsApp Mobile Number <span className="text-red-400">*</span>
                 </label>
-                <div className="flex gap-3">
+                <div className="flex flex-col sm:flex-row gap-3">
                   <select
                     value={formData.countryCode}
                     onChange={(e) => setFormData({ ...formData, countryCode: e.target.value })}
-                    className="form-input w-36 sm:w-40 flex-shrink-0 text-sm"
+                    className="form-input w-full sm:w-36 sm:flex-shrink-0 text-sm"
                   >
                     <option value="+91">🇮🇳 +91</option>
                     <option value="+1">🇺🇸 +1</option>
@@ -299,7 +299,7 @@ export default function RegistrationForm() {
                     value={formData.whatsapp}
                     onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
                     placeholder="9876543210"
-                    className="form-input flex-1 min-w-0"
+                    className="form-input w-full sm:flex-1 min-w-0"
                   />
                 </div>
                 <p className="text-gray-400 text-xs mt-1">Full number: {formData.countryCode} {formData.whatsapp}</p>
@@ -310,11 +310,11 @@ export default function RegistrationForm() {
                 <label className="block text-white mb-2 font-medium">
                   Alternate Phone Number <span className="text-gray-400">(Optional)</span>
                 </label>
-                <div className="flex gap-3">
+                <div className="flex flex-col sm:flex-row gap-3">
                   <select
                     value={formData.alternateCountryCode}
                     onChange={(e) => setFormData({ ...formData, alternateCountryCode: e.target.value })}
-                    className="form-input w-36 sm:w-40 flex-shrink-0 text-sm"
+                    className="form-input w-full sm:w-36 sm:flex-shrink-0 text-sm"
                   >
                     <option value="+91">🇮🇳 +91</option>
                     <option value="+1">🇺🇸 +1</option>
@@ -380,7 +380,7 @@ export default function RegistrationForm() {
                     value={formData.alternatePhone}
                     onChange={(e) => setFormData({ ...formData, alternatePhone: e.target.value })}
                     placeholder="Alternate contact number"
-                    className="form-input flex-1 min-w-0"
+                    className="form-input w-full sm:flex-1 min-w-0"
                   />
                 </div>
                 {errors.alternatePhone && <p className="text-red-400 text-sm mt-1">{errors.alternatePhone}</p>}
