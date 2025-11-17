@@ -1,0 +1,39 @@
+# Vercel ignore file - files to exclude from deployment
+
+# Environment files (will be set in Vercel dashboard)
+.env
+.env.local
+.env.development
+.env.production
+
+# Development files
+test-db-connection.js
+check-env.js
+
+# Documentation
+README.md
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.temp
+
