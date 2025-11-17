@@ -63,7 +63,7 @@ export default function MasterclassBanner() {
               <div className="relative rounded-2xl overflow-visible bg-gradient-to-br from-primary/25 to-secondary/25 p-3 shadow-inner">
                 <div className="relative w-full rounded-xl overflow-visible group-hover:scale-[1.01] transition-transform duration-700 shadow-lg">
                   <Image
-                    src="../public/images/banner.jpeg"
+                    src="https://drive.google.com/uc?export=view&id=1mEvcj7I7ltTP08vlwZrkFHT21SVjBxSg"
                     alt="Threat Evasion & Offensive Tooling Masterclass Poster"
                     width={1200}
                     height={675}
