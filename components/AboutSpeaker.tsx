@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
+import aashish1Image from '../AASHISH1.jpeg'
 
 export default function AboutSpeaker() {
   const [isVisible, setIsVisible] = useState(false)
@@ -68,7 +69,7 @@ export default function AboutSpeaker() {
                 <div className="w-72 h-72 sm:w-80 sm:h-80 md:w-80 md:h-80 rounded-2xl bg-gradient-to-br from-primary via-secondary to-primary p-2 pulse-glow shadow-2xl shadow-primary/40">
                   <div className="w-full h-full rounded-2xl bg-dark flex items-center justify-center border-4 border-secondary/60 overflow-hidden relative">
                     <Image
-                      src="/images/aashish1.jpeg"
+                      src={aashish1Image}
                       alt="Aashish Kumar - Co-Founder of MCyber Academy"
                       fill
                       className="object-cover object-center rounded-2xl group-hover:scale-105 transition-transform duration-700"

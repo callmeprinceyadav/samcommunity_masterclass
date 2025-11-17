@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import CountdownTimer from './CountdownTimer'
+import aashishImage from '../AASHISH.jpeg'
 
 export default function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -69,7 +70,7 @@ export default function HeroSection() {
               <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full bg-gradient-to-br from-primary via-secondary to-primary p-1.5 pulse-glow animate-pulse-slow">
                 <div className="w-full h-full rounded-full bg-dark flex items-center justify-center border-4 border-secondary/50 overflow-hidden relative">
                   <Image
-                    src="/images/AASHISH.jpeg"
+                    src={aashishImage}
                     alt="Aashish Kumar - Co-Founder of MCyber Academy"
                     fill
                     className="object-cover object-center object-top rounded-full group-hover:scale-110 transition-transform duration-500"
